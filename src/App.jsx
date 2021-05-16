@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import styled from '@emotion/styled'
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Quote from './components/Quote.jsx'
 
 const ButtonP = styled.button`
@@ -11,6 +10,12 @@ const ButtonP = styled.button`
   padding: 1rem 3rem;
   font-size: 2rem;
   border: 2px solid black;
+  transition: background-size .8s ease;
+
+  :hover {
+    cursor: pointer;
+    background-size: 400px;
+  }
 `;
 
 const Container = styled.div`
@@ -31,6 +36,11 @@ function App() {
     const phrase = await api.json();
     newQuote(phrase[0]);
   }
+
+  //Load a quote
+  useEffect(() => {
+    callAPI();
+  }, []);
   
   return (
     <Container>
