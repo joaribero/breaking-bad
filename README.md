@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Application that fetches this API: [https://breaking-bad-quotes.herokuapp.com/v1/quotes] (https://breaking-bad-quotes.herokuapp.com/v1/quotes)
+Application that fetches this API: [https://breaking-bad-quotes.herokuapp.com/v1/quotes](https://breaking-bad-quotes.herokuapp.com/v1/quotes)
 
 It shows breaking bad quotes.
 
